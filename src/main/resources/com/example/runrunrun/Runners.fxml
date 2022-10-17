@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="812.0" prefWidth="1289.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="812.0" prefWidth="1289.0" style="-fx-background-color: #555555;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <TitledPane animated="false" collapsible="false" expanded="false" layoutX="389.0" layoutY="34.0" prefHeight="200.0" prefWidth="886.0" style="-fx-border-color: #000000; -fx-background-color: #DFBE65;" text="Treadmill Running">
          <font>
@@ -18,6 +18,9 @@
          <effect>
             <Glow />
          </effect>
+         <content>
+            <BorderPane prefHeight="812.0" prefWidth="1289.0" />
+         </content>
       </TitledPane>
       <TitledPane animated="false" collapsible="false" expanded="false" layoutX="388.0" layoutY="249.0" prefHeight="200.0" prefWidth="416.0" style="-fx-border-color: #000000; -fx-background-color: #DFBE65;" text="Heart Rate">
          <font>
@@ -45,39 +48,42 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Label alignment="CENTER" layoutX="63.0" layoutY="67.0" prefHeight="66.0" prefWidth="245.0" text="Kings Of Runners">
+                  <Label alignment="CENTER" layoutX="50.0" layoutY="60.0" prefHeight="66.0" prefWidth="270.0" text="Kings Of Runners">
                      <font>
-                        <Font name="Century" size="24.0" />
+                        <Font name="Perpetua Bold Italic" size="36.0" />
                      </font>
                   </Label>
                </children>
             </Pane>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="102.0" prefWidth="370.0" style="-fx-background-color: #9685E3; -fx-border-color: #000000;" text="Main Page">
+            <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="370.0" style="-fx-background-color: #9685E3; -fx-border-color: #000000;" text="Main Page" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="72.0" prefWidth="370.0" style="-fx-background-color: #9685E3; -fx-border-color: #000000;" text="Profile" textFill="WHITE" underline="true">
                <font>
                   <Font name="Bodoni MT Bold" size="24.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="102.0" prefWidth="370.0" style="-fx-background-color: #9685E3; -fx-border-color: #000000;" text="Profile">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Button>
-            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="102.0" prefWidth="370.0" style="-fx-background-color: #9685E3; -fx-border-color: #000000;" text="Stats">
+            <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="72.0" prefWidth="370.0" style="-fx-background-color: #9685E3; -fx-border-color: #000000;" text="Stats" textFill="WHITE" underline="true">
                <font>
                   <Font name="Bodoni MT Bold" size="24.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="102.0" prefWidth="370.0" style="-fx-background-color: #9685E3; -fx-border-color: #000000;" text="About">
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="370.0" style="-fx-background-color: #9685E3; -fx-border-color: #000000;" text="About" textFill="WHITE" underline="true">
                <font>
-                  <Font size="24.0" />
+                  <Font name="Bodoni MT Bold" size="24.0" />
                </font>
             </Button>
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="102.0" prefWidth="370.0" style="-fx-background-color: #9685E3; -fx-border-color: #000000;" text="Activity">
+            <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="66.0" prefWidth="370.0" style="-fx-background-color: #9685E3; -fx-border-color: #000000;" text="Activity" textFill="WHITE" underline="true">
                <font>
-                  <Font name="Bodoni MT Bold Italic" size="24.0" />
+                  <Font name="Bodoni MT Bold" size="24.0" />
                </font>
             </Button>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #9685E3;" />
+            <Pane prefHeight="0.0" prefWidth="370.0" style="-fx-background-color: #9685E3;" />
          </children>
       </VBox>
       <TitledPane animated="false" collapsible="false" expanded="false" layoutX="824.0" layoutY="249.0" prefHeight="200.0" prefWidth="450.0" style="-fx-border-color: #000000; -fx-background-color: #DFBE65;" text="Stress">
@@ -102,9 +108,14 @@
             <Glow />
          </effect>
       </TitledPane>
-      <BorderPane prefHeight="812.0" prefWidth="1289.0" />
    </children>
    <padding>
       <Insets left="5.0" />
    </padding>
+   <effect>
+      <DropShadow />
+   </effect>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
 </AnchorPane>
