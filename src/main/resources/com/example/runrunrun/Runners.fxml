@@ -48,7 +48,7 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Label alignment="CENTER" layoutX="50.0" layoutY="60.0" prefHeight="66.0" prefWidth="270.0" text="Kings Of Runners">
+                  <Label alignment="CENTER" layoutX="50.0" layoutY="60.0" prefHeight="66.0" prefWidth="270.0" text="Runatistics">
                      <font>
                         <Font name="Perpetua Bold Italic" size="36.0" />
                      </font>
